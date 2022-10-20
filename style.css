@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
 body {
     display: grid;
     grid-template-columns: 2fr 8fr;
-    grid-template-rows: 20vh 80vh;
+    grid-template-rows: minmax(10%, 20%) minmax(80%, 90%);
+    font-family: 'Comfortaa';
 }
 
 [alt='logo'] {
