@@ -4,14 +4,13 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="normalize.css">
-        <script src="script.js" defer></script>
         <link rel="icon" href="">
         <title>Admin Dashboard</title>
     </head>
     <body>
         <div class="sidebar">
                 <img src="ab.svg" alt="logo">
-                <p class="dashboard">Dashboard</p>
+                <h1 class="dashboard">Dashboard</h1>
                 <div></div>
                 <div></div>
                 <img src="icons/shield-home.svg" alt="white-icons">
@@ -38,15 +37,18 @@
         <div class="header">
             <div class="search-bar">
                 <img src="icons/magnify-expand.svg" alt="icon">
-                <div>Search bar</div>
+                <input type="text">
+                <div></div>
                 <img src="icons/bell-ring.svg" alt="icon">
                 <img src="images/kaladin.jpg" alt="user-img">
                 <p>Kaladin Stormblessed</p>
             </div>
             <div class="user-info">
-                <img src="images/kaladin.jpg" alt="user-img">
-                <p>Hi there,</p>
-                <p>Kaladin Stormblessed (@KalStormblessed)</p>
+                <img src="images/kaladin.jpg" alt="user-img-big">
+                <div class="user-info-text">
+                    <p>Hi there,</p>
+                    <b>Kaladin Stormblessed (@KalStormB)</b>
+                </div>
             </div>
             <div class="buttons">
                 <button>New</button>
@@ -56,9 +58,9 @@
         </div>
         <div class="main-content">
             <div class="projects">
-                <p>Your Projects</p>
-                <div>
-                    <p>Super cool project</p>
+                <h2>Your projects</h2>
+                <div class="card-project">
+                    <b>Super cool project</b>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo ligula eget dolor. Aenean massa. 
                         Cum sociis natoque penatibus et magnis dis parturient montes.</p>
@@ -66,8 +68,8 @@
                     <img src="icons/eye-check-outline.svg" alt="icon">
                     <img src="icons/share-variant.svg" alt="icon">
                 </div>
-                <div>
-                    <p>Less cool project</p>
+                <div class="card-project">
+                    <b>Less cool project</b>
                     <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
                         Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
                         aliquet nec, vulputate eget, arcu.</p>
@@ -75,8 +77,8 @@
                     <img src="icons/eye-check-outline.svg" alt="icon">
                     <img src="icons/share-variant.svg" alt="icon">
                 </div>
-                <div>
-                    <p>Imposible app</p>
+                <div class="card-project">
+                    <b>Imposible app</b>
                     <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
                         Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
                         Cras dapibus. Vivamus elementum semper nisi.</p>
@@ -84,8 +86,8 @@
                     <img src="icons/eye-check-outline.svg" alt="icon">
                     <img src="icons/share-variant.svg" alt="icon">
                 </div>
-                <div>
-                    <p>Easy peasy app</p>
+                <div class="card-project">
+                    <b>Easy peasy app</b>
                     <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
                         consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
                         viverra quis, feugiat a, tellus.</p>
@@ -93,8 +95,8 @@
                     <img src="icons/eye-check-outline.svg" alt="icon">
                     <img src="icons/share-variant.svg" alt="icon">
                 </div>
-                <div>
-                    <p>Ad blocker</p>
+                <div class="card-project">
+                    <b>Ad blocker</b>
                     <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
                         Aenean imperdiet. Etiam ultricies nisi vel augue.
                         Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
@@ -102,8 +104,8 @@
                     <img src="icons/eye-check-outline.svg" alt="icon">
                     <img src="icons/share-variant.svg" alt="icon">
                 </div>
-                <div>
-                    <p>Money Maker</p>
+                <div class="card-project">
+                    <b>Money Maker</b>
                     <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
                         sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
                         luctus pulvinar, hendrerit id, lorem.</p>
@@ -113,28 +115,27 @@
                 </div>
             </div>
             <div class="announcements">
-                <p>Announcements</p>
-                <div>
-                    <p>Site maintenance</p>
-                    <p>Maecenas nec odio et ante tincidunt tempus.
-                        Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
-                        Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
-                </div>
-                <div>
-                    <p>Community share day</p>
-                    <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
-                        Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-                        quis gravida magna mi a libero. Fusce vulputate eleifend sapien.</p>
-                </div>
-                <div>
-                    <p>Update privacy policy</p>
-                    <p>Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id,
-                        metus.Nullam accumsan lorem in dui. Cras ultricies mi eu turpis
-                        hendrerit fringilla.</p>
+                <h2>Announcements</h2>
+                <div class="announcement-card">
+                    <div class="announcements-info">
+                        <b>Site maintenance</b>
+                        <p>Maecenas nec odio et ante tincidunt tempus.
+                            Donec vitae sapien ut libero.</p>
+                    </div>
+                    <div class="announcements-info">
+                        <b>Community share day</b>
+                        <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+                            Sed consequat, leo eget.</p>
+                    </div>
+                    <div class="announcements-info">
+                        <b>Update privacy policy</b>
+                        <p>Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id,
+                            metus.Nullam accumsan lorem in dui.</p>
+                    </div>
                 </div>
             </div>
             <div class="trending">
-                <p>Trending</p>
+                <h2>Trending</h2>
                     <div>
                         <img src="images/dalinar.webp" alt="user-img">
                         <p>@dalinar</p>
@@ -142,7 +143,7 @@
                     </div>
                     <div>
                         <img src="images/kaladin.jpg" alt="user-img">
-                        <p>@KalStormblessed</p>
+                        <p>@KalStormB</p>
                         <p>Super cool project</p>
                     </div>
                     <div>
